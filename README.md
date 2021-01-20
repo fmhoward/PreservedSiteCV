@@ -3,7 +3,7 @@ Provides optimal stratification for deep learning on datasets with samples from 
 <br>
 <img src="https://github.com/fmhoward/PreservedSiteCV/blob/main/PreservedSitesCV.png?raw=true" width="600">
 ## Overview
-Stratification can be performed by loading data from an annotations file into a DataFrame. Stratification can be performed with the following function:
+Stratification can be performed by loading data from an annotations file into a DataFrame. Aside from standardly available dependencies, this program interfaces with IBM's CPLEX, and requires installation of <a href='https://www.ibm.com/support/knowledgecenter/en/SSSA5P_12.8.0/ilog.odms.cplex.help/CPLEX/GettingStarted/topics/set_up/Python_setup.html'>CPLEX's python API</a>. Stratification can be performed with the following function:
 ```python
 def generate(data, category, values, crossfolds = 3, target_column = 'CV3', patient_column = 'submitter_id', site_column = 'SITE', timelimit = 100):
     ''' Generates 3 site preserved cross folds with optimal stratification of category
