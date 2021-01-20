@@ -47,4 +47,6 @@ Crossfold 2: A - 54 B - 251  Sites: ['Site 1', 'Site 2', 'Site 3', 'Site 5', 'Si
 Crossfold 3: A - 54 B - 250  Sites: ['Site 10', 'Site 11', 'Site 12', 'Site 16', 'Site 17', 'Site 18', 'Site 24', 'Site 34', 'Site 35', 'Site 37']
 ```
 
+## Reproduction
+To recreate our cross validation setup for <a href="">our work describing batch effect in TCGA</a>, clinical annotations should be downloaded from https://www.cbioportal.org/ for TCGA datasets for the six cancers of interest. Immune subtype annotations were obtained from the work of <a href="https://pubmed.ncbi.nlm.nih.gov/29628290/">Thorsson et al</a>, and genomic ancestry annotations were obtained from <a href="https://www.cell.com/cancer-cell/pdfExtended/S1535-6108(20)30211-7">Carrot-Zhang et al</a>. The CSV files with annotations from cbioportal can then be loaded into a dataframe as per the above example to generate 3 groups of sites for preserved site cross validation.
 
