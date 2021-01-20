@@ -31,7 +31,7 @@ def generate(data, category, values, crossfolds = 3, target_column = 'CV3', pati
 ```
 
 ## Example
-Please see test.py for example use applied to the accompanying 'example.csv' data file. 
+Please see test.py for example use applied to the accompanying 'example.csv' data file.  In our tests, execution of this code takes 0.16 seconds.
 ```python
 import preservedsite.crossfolds as cv
 import pandas as pd
