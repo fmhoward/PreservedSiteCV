@@ -1,6 +1,6 @@
 # Preserved Site Cross Validation
 Provides optimal stratification for deep learning on datasets with samples from multiple sites
-
+![Preserved Site Cross Validation](https://github.com/fmhoward/PreservedSiteCV/blob/main/PreservedSitesCV.png?raw=true)
 ## Overview
 Stratification can be performed by loading data from an annotations file into a DataFrame. Required column headers include 'SITE' representing the tissue submitting site for a sample, and 'submitter_id' representing a unique ID for each patient. Stratification can be performed with the following function:
 ```python
