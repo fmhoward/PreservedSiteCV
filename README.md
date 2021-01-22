@@ -4,7 +4,7 @@ Provides optimal stratification for deep learning on datasets with samples from 
 <img src="https://github.com/fmhoward/PreservedSiteCV/blob/main/PreservedSitesCV.png?raw=true" width="600">
 
 ## Installation
-The associated files can be downloaded to a project directory or installed using the associated setup.py. Installation takes < 5 minutes on a standard desktop computer. All software was tested on Windows 10 version 1909.  
+The associated files can be downloaded to a project directory. Installation takes < 5 minutes on a standard desktop computer. All software was tested on Windows 10 version 1909.  
 Requirements:
 * pandas 1.0.5
 * cvxpy 1.1.7
