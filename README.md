@@ -49,6 +49,8 @@ Crossfold 2: A - 54 B - 250  Sites: ['Site 1', 'Site 2', 'Site 4', 'Site 5', 'Si
 Crossfold 3: A - 54 B - 250  Sites: ['Site 3', 'Site 6', 'Site 12', 'Site 16', 'Site 17', 'Site 24', 'Site 27', 'Site 29', 'Site 31', 'Site 33', 'Site 35', 'Site 37']
 ```
 
+<b>Note:</b> <a href="https://www.ibm.com/support/pages/note-reproducibility-cplex-runs">due to the nature of how CPLEX arrives at solutions</a>, slightly different results are expected on different hardware than what is specified above. Unfortunately, testing suggested CPLEX reproducibility parameters such as feasibility tolerance, optimilty tolernace, and Markowitz tolerance still does not ensure identical results on different hardware. Additionally, CPLEX will continue to search for solutions until either it arrives at an optimal solution or a pre-specified time limit is exhausted. This can be set with the timelimit parameter of the generate function above. While in our tests, optimal solutions were achieved in <1 second, it is possible for example code to run for up to 100s by default searching for optimal solutions, depending on the specific hardware used.
+
 ## Reproduction
 To recreate our cross validation setup for <a href="https://www.biorxiv.org/content/10.1101/2020.12.03.410845v2">our work describing batch effect in TCGA</a>, clinical annotations should be downloaded from https://www.cbioportal.org/ for TCGA datasets for the six cancers of interest. Immune subtype annotations were obtained from the work of <a href="https://pubmed.ncbi.nlm.nih.gov/29628290/">Thorsson et al</a>, and genomic ancestry annotations were obtained from <a href="https://www.cell.com/cancer-cell/pdfExtended/S1535-6108(20)30211-7">Carrot-Zhang et al</a>. The CSV files with annotations from cbioportal can then be loaded into a dataframe as per the above example to generate 3 groups of sites for preserved site cross validation.
 
@@ -58,3 +60,5 @@ data = cv.generate(data, "ER status", ["Positive", "Negative"], crossfolds=3, pa
 data = cv.generate(data, "BRCA mutation", ["Present", "Absent"], crossfolds=3, patient_column='patient', site_column='site')
 ...
 ```
+
+
