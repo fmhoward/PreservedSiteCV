@@ -4,8 +4,10 @@ Provides optimal stratification for deep learning on datasets with samples from 
 <img src="https://github.com/fmhoward/PreservedSiteCV/blob/main/PreservedSitesCV.png?raw=true" width="600">
 
 ## Installation
-The associated files can be downloaded to a project directory. Installation takes < 5 minutes on a standard desktop computer. All software was tested on Windows 10 version 1909.  
+The associated files can be downloaded to a project directory. Installation takes < 5 minutes on a standard desktop computer. All software was tested on Windows 10 version 1909, with a Intel Core i5-10210U processor with integrated Intel UHD graphics processor.
+
 Requirements:
+* python 3.7
 * pandas 1.0.5
 * cvxpy 1.1.7
 * numpy 1.19.0
@@ -42,9 +44,9 @@ data = cv.generate(data, "feature", ["A", "B"], crossfolds=3, patient_column='pa
 
 The resulting segregation of sites into crossfolds is printed as follows, with the appropriate assignment of patients to folds for cross validation appended to the dataframe.
 ```
-Crossfold 1: A - 54 B - 250  Sites: ['Site 0', 'Site 4', 'Site 7', 'Site 8', 'Site 13', 'Site 14', 'Site 30', 'Site 33']
-Crossfold 2: A - 54 B - 251  Sites: ['Site 1', 'Site 2', 'Site 3', 'Site 5', 'Site 6', 'Site 9', 'Site 15', 'Site 19', 'Site 20', 'Site 21', 'Site 22', 'Site 23', 'Site 25', 'Site 26', 'Site 27', 'Site 28', 'Site 29', 'Site 31', 'Site 32', 'Site 36']
-Crossfold 3: A - 54 B - 250  Sites: ['Site 10', 'Site 11', 'Site 12', 'Site 16', 'Site 17', 'Site 18', 'Site 24', 'Site 34', 'Site 35', 'Site 37']
+Crossfold 1: A - 54 B - 251  Sites: ['Site 0', 'Site 7', 'Site 9', 'Site 10', 'Site 11', 'Site 13', 'Site 19', 'Site 28']
+Crossfold 2: A - 54 B - 250  Sites: ['Site 1', 'Site 2', 'Site 4', 'Site 5', 'Site 8', 'Site 14', 'Site 15', 'Site 18', 'Site 20', 'Site 21', 'Site 22', 'Site 23', 'Site 25', 'Site 26', 'Site 30', 'Site 32', 'Site 34', 'Site 36']
+Crossfold 3: A - 54 B - 250  Sites: ['Site 3', 'Site 6', 'Site 12', 'Site 16', 'Site 17', 'Site 24', 'Site 27', 'Site 29', 'Site 31', 'Site 33', 'Site 35', 'Site 37']
 ```
 
 ## Reproduction
