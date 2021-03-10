@@ -3,7 +3,7 @@ import numpy as np
 import cvxpy as cp
 import cplex
 
-def generate(data, category, values, crossfolds = 3, target_column = 'CV3', patient_column = 'submitter_id', site_column = 'SITE', timelimit = 100, randomseed=0)):
+def generate(data, category, values, crossfolds = 3, target_column = 'CV3', patient_column = 'submitter_id', site_column = 'SITE', timelimit = 100, randomseed=0):
     ''' Generates 3 site preserved cross folds with optimal stratification of category
     Input:
         data: dataframe with slides that must be split into crossfolds.
@@ -39,7 +39,7 @@ def generate(data, category, values, crossfolds = 3, target_column = 'CV3', pati
         for i in range(crossfolds):
             error += cp.square(cp.sum(crossfolds * cp.multiply(gList[i], listSet[v])) - sum(listSet[v]))
     prob = cp.Problem(cp.Minimize(error), constraints)
-    prob.solve(solver='CPLEX', cplex_params={"timelimit": timelimit, "randomseed": randomseed=0})
+    prob.solve(solver='CPLEX', cplex_params={"timelimit": timelimit, "randomseed": randomseed})
     gSites = []
     for i in range(crossfolds):
         gSites += [[]]
