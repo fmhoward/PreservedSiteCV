@@ -60,5 +60,6 @@ data = cv.generate(data, "ER status", ["Positive", "Negative"], crossfolds=3, pa
 data = cv.generate(data, "BRCA mutation", ["Present", "Absent"], crossfolds=3, patient_column='patient', site_column='site')
 ...
 ```
+Given the non-deterministic nature of CPLEX, we have included the genereated splits used for our work to allow for replication in the Annotation Files folder.
 
 
