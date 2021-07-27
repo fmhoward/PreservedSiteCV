@@ -3,6 +3,24 @@ Provides optimal stratification for deep learning on datasets with samples from 
 <br>
 <img src="https://github.com/fmhoward/PreservedSiteCV/blob/main/PreservedSitesCV.png?raw=true" width="600">
 
+## Attribution
+If you use this code in your work or find it helpful, please consider citing our paper:
+```
+@article{howard_impact_2021,
+	title = {The impact of site-specific digital histology signatures on deep learning model accuracy and bias},
+	volume = {12},
+	issn = {2041-1723},
+	url = {https://www.nature.com/articles/s41467-021-24698-1},
+	doi = {10.1038/s41467-021-24698-1},
+	pages = {1--13},
+	number = {1},
+	journaltitle = {Nature Communications},
+	shortjournal = {Nat Commun},
+	author = {Howard, Frederick M. and Dolezal, James and Kochanny, Sara and Schulte, Jefree and Chen, Heather and Heij, Lara and Huo, Dezheng and Nanda, Rita and Olopade, Olufunmilayo I. and Kather, Jakob N. and Cipriani, Nicole and Grossman, Robert L. and Pearson, Alexander T.},
+	date = {2021-07-20},
+}
+```
+
 ## Installation
 The associated files can be downloaded to a project directory. Installation takes < 5 minutes on a standard desktop computer. All software was tested on Windows 10 version 1909, with a Intel Core i5-10210U processor with integrated Intel UHD graphics processor.
 
