@@ -4,7 +4,7 @@ Provides optimal stratification for deep learning on datasets with samples from 
 <img src="https://github.com/fmhoward/PreservedSiteCV/blob/main/PreservedSitesCV.png?raw=true" width="600">
 
 ## Attribution
-If you use this code in your work or find it helpful, please consider citing our paper:
+If you use this code in your work or find it helpful, please consider citing our paper in <a href='https://www.nature.com/articles/s41467-021-24698-1'>Nature Communications</a>.
 ```
 @article{howard_impact_2021,
 	title = {The impact of site-specific digital histology signatures on deep learning model accuracy and bias},
