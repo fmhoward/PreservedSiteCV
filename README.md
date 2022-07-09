@@ -6,18 +6,17 @@ Provides optimal stratification for deep learning on datasets with samples from 
 ## Attribution
 If you use this code in your work or find it helpful, please consider citing our paper in <a href='https://www.nature.com/articles/s41467-021-24698-1'>Nature Communications</a>.
 ```
-@article{howard_impact_2021,
-	title = {The impact of site-specific digital histology signatures on deep learning model accuracy and bias},
-	volume = {12},
-	issn = {2041-1723},
-	url = {https://www.nature.com/articles/s41467-021-24698-1},
-	doi = {10.1038/s41467-021-24698-1},
-	pages = {1--13},
-	number = {1},
-	journaltitle = {Nature Communications},
-	shortjournal = {Nat Commun},
-	author = {Howard, Frederick M. and Dolezal, James and Kochanny, Sara and Schulte, Jefree and Chen, Heather and Heij, Lara and Huo, Dezheng and Nanda, Rita and Olopade, Olufunmilayo I. and Kather, Jakob N. and Cipriani, Nicole and Grossman, Robert L. and Pearson, Alexander T.},
-	date = {2021-07-20},
+@article {Howard2022.07.07.499039,
+	author = {Howard, Frederick Matthew and Dolezal, James and Kochanny, Sara and Khramtsova, Galina and Vickery, Jasmine and Srisuwananukorn, Andrew and Woodard, Anna and Chen, Nan and Nanda, Rita and Perou, Charles M and Olopade, Olufunmilayo I. and Huo, Dezheng and Pearson, Alexander T.},
+	title = {Multimodal Prediction of Breast Cancer Recurrence Assays and Risk of Recurrence},
+	elocation-id = {2022.07.07.499039},
+	year = {2022},
+	doi = {10.1101/2022.07.07.499039},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Gene expression-based recurrence assays are strongly recommended to guide the use of chemotherapy in hormone receptor-positive, HER2-negative breast cancer, but such testing is expensive, can contribute to delays in care, and may not be available in low-resource settings. Here, we describe the training and independent validation of a deep learning model that predicts recurrence assay result and risk of recurrence using both digital histology and clinical risk factors. We demonstrate that this approach outperforms an established clinical nomogram (area under the receiver operating characteristic curve of 0.833 versus 0.765 in the validation cohort, p = 0.003), and can identify a subset of patients with excellent prognoses who may not need further genomic testing.Competing Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2022/07/08/2022.07.07.499039},
+	eprint = {https://www.biorxiv.org/content/early/2022/07/08/2022.07.07.499039.full.pdf},
+	journal = {bioRxiv}
 }
 ```
 
